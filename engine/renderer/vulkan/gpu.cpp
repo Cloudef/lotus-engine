@@ -78,7 +78,7 @@ namespace lotus
         buffer_layout_features.uniformBufferStandardLayout = true;
 
         vk::PhysicalDeviceRayTracingFeaturesKHR rt_features;
-        rt_features.rayTracing = true;
+        rt_features.rayTracing = raytrace_enabled;
 
         buffer_layout_features.pNext = &rt_features;
 

@@ -36,7 +36,7 @@ namespace lotus
         return VK_FALSE;
     }
 
-    Renderer::Renderer(Engine* _engine) : render_mode{RenderMode::Hybrid}, engine(_engine)
+    Renderer::Renderer(Engine* _engine) : render_mode{RenderMode::Rasterization}, engine(_engine)
     {
         window = std::make_unique<Window>(&engine->settings, engine->config.get());
 
